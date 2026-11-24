@@ -206,8 +206,8 @@ WINDTIDE_URL=https://（WindTide のドメイン）
 
 | 用途 | URL |
 | --- | --- |
-| iframe | `${WINDTIDE_URL}/embed?p=<港ID>&view=week` |
-| 別タブ | `${WINDTIDE_URL}/?p=<港ID>&view=week` |
+| iframe | `${WINDTIDE_URL}/embed?port=<港ID>&view=week` |
+| 別タブ | `${WINDTIDE_URL}/?port=<港ID>&view=week` |
 
 > WindTide 側に **`/embed`**（ヘッダー等を出さない埋め込み用ページ）が必要です。
 > また、セキュリティヘッダーで `X-Frame-Options` や `frame-ancestors` を設定する場合は、

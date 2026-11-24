@@ -15,7 +15,8 @@ export default function WindTideButton({ portId, portName, baseUrl, view = "week
   const triggerRef = useRef<HTMLButtonElement | null>(null);
 
   const base = baseUrl.replace(/\/+$/, "");
-  const q = `p=${encodeURIComponent(portId)}&view=${view}`;
+  // WindTide 側の受け付けは ?port=<港ID>&view=week|month
+  const q = `port=${encodeURIComponent(portId)}&view=${view}`;
   const embedUrl = `${base}/embed?${q}`;
   const appUrl = `${base}/?${q}`;
 
