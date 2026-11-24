@@ -15,7 +15,9 @@
   --signal: 194 65 47;
   --sand: 222 210 182;
   --gold: 169 123 37;
-  --shop: 105 76 138;
+  --port: 13 118 128;
+  --harbor: 217 119 6;
+  --shop: 190 24 148;
 
   --font-display: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP",
     "Songti SC", serif;
@@ -156,27 +158,27 @@ select {
 /* --------------------------------- markers --------------------------------- */
 .port-dot {
   display: block;
-  width: 9px;
-  height: 9px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  background: rgb(var(--teal));
-  border: 1.5px solid rgba(246, 247, 241, 0.95);
-  box-shadow: 0 1px 3px rgba(14, 42, 51, 0.45);
+  background: rgb(var(--port));
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(14, 42, 51, 0.25), 0 2px 5px rgba(14, 42, 51, 0.4);
   transition: transform 0.14s ease;
 }
 .port-dot--harbor {
-  border-radius: 1px;
-  background: rgb(var(--gold));
+  border-radius: 3px;
+  background: rgb(var(--harbor));
 }
 .port-dot--active {
   background: rgb(var(--signal));
-  width: 13px;
-  height: 13px;
+  width: 19px;
+  height: 19px;
   border-color: #fff;
-  box-shadow: 0 0 0 3px rgba(194, 65, 47, 0.22), 0 1px 4px rgba(14, 42, 51, 0.5);
+  box-shadow: 0 0 0 4px rgba(194, 65, 47, 0.28), 0 2px 6px rgba(14, 42, 51, 0.5);
 }
 .port-marker:hover .port-dot {
-  transform: scale(1.35);
+  transform: scale(1.2);
 }
 
 .cluster-dot {
@@ -194,7 +196,7 @@ select {
   box-shadow: 0 1px 4px rgba(14, 42, 51, 0.2);
 }
 .cluster-dot--shop {
-  background: rgba(105, 76, 138, 0.92);
+  background: rgba(190, 24, 148, 0.92);
   border-color: rgba(246, 247, 241, 0.95);
   color: rgb(246 247 241);
 }
@@ -206,23 +208,23 @@ select {
 
 .shop-dot {
   display: block;
-  width: 9px;
-  height: 9px;
+  width: 14px;
+  height: 14px;
   background: rgb(var(--shop));
-  border: 1.5px solid rgba(246, 247, 241, 0.95);
+  border: 2px solid #fff;
   transform: rotate(45deg);
-  box-shadow: 0 1px 3px rgba(14, 42, 51, 0.45);
+  box-shadow: 0 0 0 1px rgba(14, 42, 51, 0.22), 0 2px 5px rgba(14, 42, 51, 0.4);
   transition: transform 0.14s ease;
 }
 .port-marker:hover .shop-dot {
-  transform: rotate(45deg) scale(1.35);
+  transform: rotate(45deg) scale(1.25);
 }
 .shop-dot--active {
   background: rgb(var(--signal));
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   border-color: #fff;
-  box-shadow: 0 0 0 3px rgba(194, 65, 47, 0.22), 0 1px 4px rgba(14, 42, 51, 0.5);
+  box-shadow: 0 0 0 4px rgba(194, 65, 47, 0.28), 0 2px 6px rgba(14, 42, 51, 0.5);
 }
 
 .me-dot {

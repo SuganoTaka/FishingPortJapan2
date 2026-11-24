@@ -165,7 +165,7 @@ export default function PortDetail({
               <span
                 className={[
                   "text-[9.5px] tracking-wider px-1 py-[1px] rounded-[1px] font-semibold",
-                  port.k === "f" ? "bg-teal text-paper-2" : "bg-gold text-paper-2",
+                  port.k === "f" ? "bg-port text-paper-2" : "bg-harbor text-paper-2",
                 ].join(" ")}
               >
                 {portTypeLabel(port)}

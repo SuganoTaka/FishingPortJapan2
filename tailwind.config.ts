@@ -21,6 +21,8 @@ const config: Config = {
         signal: "rgb(var(--signal) / <alpha-value>)",
         sand: "rgb(var(--sand) / <alpha-value>)",
         gold: "rgb(var(--gold) / <alpha-value>)",
+        port: "rgb(var(--port) / <alpha-value>)",
+        harbor: "rgb(var(--harbor) / <alpha-value>)",
         shop: "rgb(var(--shop) / <alpha-value>)",
       },
       fontFamily: {

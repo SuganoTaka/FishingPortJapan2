@@ -112,7 +112,7 @@ export default function ShopDetail({ shop, ports, me, onClose, onSelectPort }: P
                   <span
                     className={[
                       "shrink-0 w-[7px] h-[7px]",
-                      p.k === "h" ? "bg-gold rounded-[1px]" : "bg-teal rounded-full",
+                      p.k === "h" ? "bg-harbor rounded-[2px]" : "bg-port rounded-full",
                     ].join(" ")}
                     aria-hidden="true"
                   />

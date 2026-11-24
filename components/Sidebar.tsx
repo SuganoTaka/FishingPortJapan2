@@ -255,10 +255,10 @@ export default function Sidebar({
                     className={[
                       "mt-1.5 shrink-0",
                       item.kind === "shop"
-                        ? "w-[8px] h-[8px] bg-shop rotate-45"
+                        ? "w-[9px] h-[9px] bg-shop rotate-45"
                         : item.port?.k === "h"
-                          ? "w-[7px] h-[7px] bg-gold rounded-[1px]"
-                          : "w-[7px] h-[7px] bg-teal rounded-full",
+                          ? "w-[9px] h-[9px] bg-harbor rounded-[2px]"
+                          : "w-[9px] h-[9px] bg-port rounded-full",
                     ].join(" ")}
                     aria-hidden="true"
                   />

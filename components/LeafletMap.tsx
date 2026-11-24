@@ -111,8 +111,8 @@ export default function LeafletMap({
         icon: L.divIcon({
           className: "port-marker",
           html: portDotHtml(p, p.i === s.selectedPortId),
-          iconSize: [13, 13],
-          iconAnchor: [6.5, 6.5],
+          iconSize: [17, 17],
+          iconAnchor: [8.5, 8.5],
         }),
         keyboard: false,
         title: p.n,
@@ -143,8 +143,8 @@ export default function LeafletMap({
         icon: L.divIcon({
           className: "port-marker",
           html: shopDotHtml(shop.i === s.selectedShopId),
-          iconSize: [11, 11],
-          iconAnchor: [5.5, 5.5],
+          iconSize: [16, 16],
+          iconAnchor: [8, 8],
         }),
         keyboard: false,
         title: shop.n,

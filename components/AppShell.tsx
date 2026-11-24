@@ -349,15 +349,15 @@ export default function AppShell({
 
           <span className="hidden md:flex items-center gap-1.5 text-[10.5px] text-ink-3">
             <span className="inline-flex items-center gap-1">
-              <span className="w-[7px] h-[7px] rounded-full bg-teal" /> 漁港
+              <span className="w-[9px] h-[9px] rounded-full bg-port ring-1 ring-white" /> 漁港
               <span className="num ml-0.5">{dataset?.counts.fishing.toLocaleString("ja-JP") ?? "—"}</span>
             </span>
             <span className="inline-flex items-center gap-1 ml-2">
-              <span className="w-[7px] h-[7px] rounded-[1px] bg-gold" /> 港湾
+              <span className="w-[9px] h-[9px] rounded-[2px] bg-harbor ring-1 ring-white" /> 港湾
               <span className="num ml-0.5">{dataset?.counts.harbor.toLocaleString("ja-JP") ?? "—"}</span>
             </span>
             <span className="inline-flex items-center gap-1 ml-2">
-              <span className="w-[7px] h-[7px] rotate-45 bg-shop" /> 釣具店
+              <span className="w-[9px] h-[9px] rotate-45 bg-shop ring-1 ring-white" /> 釣具店
               <span className="num ml-0.5">{shopData?.count.toLocaleString("ja-JP") ?? "—"}</span>
             </span>
           </span>
